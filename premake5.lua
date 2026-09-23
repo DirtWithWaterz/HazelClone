@@ -26,7 +26,8 @@ project "HazelClone"
 
     includedirs
     {
-        "%{prj.name}/vendor/spdlog/include"
+        "HazelClone/src",
+        "HazelClone/vendor/spdlog/include"
     }
 
     filter "system:windows"
@@ -89,8 +90,8 @@ project "Sandbox"
 
     includedirs
     {
-        "HazelClone/vendor/spdlog/include",
-        "HazelClone/src"
+        "HazelClone/src",
+        "HazelClone/vendor/spdlog/include"
     }
 
     links
